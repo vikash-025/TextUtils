@@ -31,14 +31,15 @@ function App() {
     <>
    <BrowserRouter>
   <Navbar title = "TextUtils "  mode = {mode}  toggleMode={toggleMode}/>
-<div className="container my-3">
+  <div className="container my-3">
 
 
         { <Routes>
-          <Route path="/about" element={<About />} />
+
           
-          < Route path="/"
+          <Route path="/"
             element= {<TextForm heading="Enter the text to analyse: " mode={mode}/>} /> 
+            <Route path="/about" element={<About />} />
           </Routes> }
        
     {/* <TextForm heading ="Enter Your Text Here"  mode = {mode} /> */}
