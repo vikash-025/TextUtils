@@ -44,12 +44,12 @@ setText(newText);
 
   return (
     <>
-    <div className='container' style={{color:props.mode==='dark'? 'white':'black'}}>
+    <div className='container' style={{color:props.mode==='dark'? 'grey':'black'}}>
         <h1>{props.heading}</h1>
         <div className="mb-3">
           {/* <label for="myBox" class="form-label">Example textarea</label> */}
-          <textarea className="form-control" value = {text} onChange= {handleOnChange} id="myBox" rows="8" style={{backgroundColor:props.mode==='dark'? 'grey':'white' ,
-        color:props.mode==='dark'? 'white':'black'}}></textarea>
+          <textarea className="form-control" value = {text} onChange= {handleOnChange} id="myBox" rows="8" style={{backgroundColor:props.mode==='dark'? 'white':'white' ,
+        color:props.mode==='dark'? 'black':'black'}}></textarea>
           <button className="btn btn-primary  my-3" onClick={handleUpClick}>Convert to uppercase</button>
           <button className="btn btn-primary my-3 mx-2" onClick={handleLoClick}>Convert to lowercase</button>
           <button className="btn btn-primary my-3 mx-2" onClick={handleNumber}>Show Numbers from text</button>
